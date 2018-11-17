@@ -25,19 +25,4 @@ document.location = "/mobile.html";
 }
 //-->
 </script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript">
-    $(function(){
-        if (/iPhone|iPod|iPad/.test(navigator.userAgent))
-            $('iframe').wrap(function(){
-                var $this = $(this);
-                return $('<div />').css({
-                    width: $this.attr('width'),
-                    height: $this.attr('height'),
-                    overflow: 'auto',
-                    '-webkit-overflow-scrolling': 'touch'
-                });
-            });
-    })
-</script>
 </html>
