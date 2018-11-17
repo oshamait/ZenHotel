@@ -18,7 +18,14 @@
 </iframe>  
     
   </body>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+<!--
+if (screen.width <= 100) {
+document.location = "/mobile.html";
+}
+//-->
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(function(){
         if (/iPhone|iPod|iPad/.test(navigator.userAgent))
@@ -32,12 +39,5 @@
                 });
             });
     })
-</script>
-    <script type="text/javascript">
-<!--
-if (screen.width <= 100) {
-document.location = "/mobile.html";
-}
-//-->
 </script>
 </html>
